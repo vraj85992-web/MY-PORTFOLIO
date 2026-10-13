@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E2E4E9"/>
+    </linearGradient>
+    <linearGradient id="redAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A4F"/>
+      <stop offset="100%" stop-color="#E7473C"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#121316" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Circular background badge -->
+  <rect width="400" height="400" rx="40" fill="url(#bgGrad)"/>
+  <circle cx="200" cy="200" r="170" fill="#FFFFFF" stroke="#E2E4E9" stroke-width="2"/>
+  <circle cx="200" cy="200" r="156" fill="none" stroke="#E7473C" stroke-width="3" stroke-dasharray="10 8" opacity="0.6"/>
+
+  <!-- Geometric avatar base -->
+  <!-- Shoulders / Hoodie -->
+  <path d="M90 340 C100 270, 150 250, 200 250 C250 250, 300 270, 310 340 Z" fill="#18181B"/>
+  <!-- Hoodie collar detail with bright red accent -->
+  <path d="M160 255 L200 295 L240 255" fill="none" stroke="#E7473C" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="200" cy="305" r="5" fill="#E7473C"/>
+
+  <!-- Neck -->
+  <rect x="182" y="215" width="36" height="40" rx="8" fill="#F1C27D"/>
+
+  <!-- Head -->
+  <ellipse cx="200" cy="180" rx="55" ry="65" fill="#FFDBAC"/>
+
+  <!-- Hair -->
+  <path d="M142 165 C140 120, 165 105, 200 105 C235 105, 260 120, 258 165 C250 145, 230 140, 200 140 C170 140, 150 145, 142 165 Z" fill="#121316"/>
+  <!-- Front Hair wave -->
+  <path d="M142 160 C150 130, 190 120, 240 135 C220 130, 180 130, 155 155 Z" fill="#2A2B32"/>
+
+  <!-- Eyes / Eyebrows -->
+  <ellipse cx="178" cy="175" rx="5" ry="6" fill="#18181B"/>
+  <ellipse cx="222" cy="175" rx="5" ry="6" fill="#18181B"/>
+  <path d="M168 163 Q178 158 188 163" fill="none" stroke="#18181B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M212 163 Q222 158 232 163" fill="none" stroke="#18181B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Smile -->
+  <path d="M185 205 Q200 218 215 205" fill="none" stroke="#C66" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Developer Glasses -->
+  <rect x="160" y="165" width="35" height="24" rx="6" fill="none" stroke="#18181B" stroke-width="3.5"/>
+  <rect x="205" y="165" width="35" height="24" rx="6" fill="none" stroke="#18181B" stroke-width="3.5"/>
+  <line x1="195" y1="177" x2="205" y2="177" stroke="#18181B" stroke-width="3.5"/>
+
+  <!-- Floating Tech Badges around avatar -->
+  <g filter="url(#cardShadow)">
+    <rect x="35" y="70" width="85" height="34" rx="17" fill="#FFFFFF" stroke="#E7473C" stroke-width="1.5"/>
+    <text x="77" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12" fill="#E7473C" text-anchor="middle">&lt;HTML5/&gt;</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <rect x="275" y="80" width="85" height="34" rx="17" fill="#18181B"/>
+    <text x="317" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="700" font-size="12" fill="#FFFFFF" text-anchor="middle">{ CSS3 }</text>
+  </g>
+
+  <g filter="url(#cardShadow)">
+    <rect x="280" y="270" width="90" height="34" rx="17" fill="#FFFFFF" stroke="#E2E4E9" stroke-width="1.5"/>
+    <circle cx="298" cy="287" r="5" fill="#E7473C"/>
+    <text x="334" y="291" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="600" font-size="11" fill="#18181B" text-anchor="middle">Available</text>
+  </g>
+</svg>
